@@ -1,0 +1,28 @@
+{
+  "applications": ["TAZEDaily"],
+  "changelogDate": "20230104223354",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "bookmark",
+  "fields": [],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Bookmark",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "newsArticle",
+      "ownerSide": true,
+      "relationshipName": "newsarticle",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

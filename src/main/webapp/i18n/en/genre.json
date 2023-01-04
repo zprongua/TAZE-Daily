@@ -1,0 +1,16 @@
+{
+  "tazeDailyApp": {
+    "Genre": {
+      "null": "",
+      "BUSINESS": "BUSINESS",
+      "ENTERTAINMENT": "ENTERTAINMENT",
+      "FOOD": "FOOD",
+      "HEALTH": "HEALTH",
+      "POLITICS": "POLITICS",
+      "SPORTS": "SPORTS",
+      "STYLE": "STYLE",
+      "TECHNOLOGY": "TECHNOLOGY",
+      "TRAVEL": "TRAVEL"
+    }
+  }
+}
