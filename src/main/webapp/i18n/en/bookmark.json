@@ -1,0 +1,25 @@
+{
+  "tazeDailyApp": {
+    "bookmark": {
+      "home": {
+        "title": "Bookmarks",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bookmark",
+        "createOrEditLabel": "Create or edit a Bookmark",
+        "notFound": "No Bookmarks found"
+      },
+      "created": "A new Bookmark is created with identifier {{ param }}",
+      "updated": "A Bookmark is updated with identifier {{ param }}",
+      "deleted": "A Bookmark is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bookmark {{ id }}?"
+      },
+      "detail": {
+        "title": "Bookmark"
+      },
+      "id": "ID",
+      "newsarticle": "Newsarticle",
+      "user": "User"
+    }
+  }
+}

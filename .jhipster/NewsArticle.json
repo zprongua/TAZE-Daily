@@ -1,0 +1,48 @@
+{
+  "applications": ["TAZEDaily"],
+  "changelogDate": "20230104223353",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "news_article",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "author",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "article",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "genre",
+      "fieldType": "Genre",
+      "fieldValues": "BUSINESS,ENTERTAINMENT,FOOD,HEALTH,POLITICS,SPORTS,STYLE,TECHNOLOGY,TRAVEL"
+    },
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "likes",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "NewsArticle",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "postComment",
+      "otherEntityRelationshipName": "newsArticle",
+      "relationshipName": "postComment",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

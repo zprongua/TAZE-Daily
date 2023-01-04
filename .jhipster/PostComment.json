@@ -1,0 +1,41 @@
+{
+  "applications": ["TAZEDaily"],
+  "changelogDate": "20230104223352",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "post_comment",
+  "fields": [
+    {
+      "fieldName": "body",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "author",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "timeStamp",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "PostComment",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "newsArticle",
+      "otherEntityRelationshipName": "postComment",
+      "relationshipName": "newsArticle",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "relationshipName": "user",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}
