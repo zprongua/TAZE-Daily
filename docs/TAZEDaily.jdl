@@ -1,5 +1,7 @@
-entity Bookmark {
-  article NewsArticle
+entity PostComment {
+  body String
+  author String
+  timeStamp LocalDate
 }
 
 entity NewsArticle {
@@ -9,13 +11,9 @@ entity NewsArticle {
   genre Genre
   date LocalDate
   likes Integer
-  comments Comment
 }
 
-entity Comment {
-  body String
-  author String
-  timeStamp LocalDate
+entity Bookmark {
 }
 
 enum Genre {
@@ -44,8 +42,11 @@ application {
 }
 
 relationship ManyToOne {
-  Comment to NewsArticle
-  Comment{user(login)} to User
+  PostComment to NewsArticle
+  PostComment{user(login)} to User
   Bookmark{user(login)} to User
-  Race{user(login)} to User
+}
+
+relationship OneToOne {
+  Bookmark{newsarticle} to NewsArticle
 }
